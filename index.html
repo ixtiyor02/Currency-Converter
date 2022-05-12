@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Currency App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <select class="first-select">
+                           
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <select class="second-select">
+                           
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange-rate"></div>
+            <button class="get-btn">Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="./country.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

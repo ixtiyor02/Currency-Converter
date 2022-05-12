@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+p, header, button {
+    font-family: 'Jost'
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #675AFE;
+}
+
+.wrapper {
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input,
+select,
+button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 17px;
+    border: 1px solid #999;
+}
+
+form input:focus {
+    padding: 0 14px;
+    border: 2px solid #675AFE;
+}
+
+form .drop-list {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.drop-list .select-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 115px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.select-box select {
+    width: auto;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.select-box img {
+    max-width: 25px;
+}
+
+.drop-list .icon {
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+form .exchange-rate {
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+form button {
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    background-color: #675AFE;
+    cursor: pointer;
+}
+
+.from p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.to p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and  (max-width: 480px ) {
+    .wrapper {
+        width: 70%;
+    }
+    .icon i {
+        margin: 5px;
+        font-size: 16px;
+    }
+    .drop-list .select-box {
+        width: 95px;
+    }
+}
+@media screen and  (min-width: 481px ) and (max-width:720px) {
+    .wrapper {
+        width: 60%;
+    }
+    .drop-list .select-box {
+        width: 135px;
+    }
+}
